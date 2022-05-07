@@ -1,15 +1,15 @@
-[mywebservers: vars]
 ---
-- hosts: all
+- hosts: mywebservers
   become : yes
   tasks:
    - name: install webserver
      apt:
-      name: {{mywebpackonubuntu}}
+      name: "{{mywebpackonubuntu}}"
       state: present
       when: ansible_os_family=="Debian"
+  
    - name: i want to start  apache2
      service:
-      name: {{mywebpackonubuntu}}
+      name: "{{mywebpackonubuntu}}"
       state: restarted
      when: ansible_os_family=="Debian" 
