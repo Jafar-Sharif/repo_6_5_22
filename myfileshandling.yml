@@ -9,6 +9,6 @@
       state: present
 
   - name: i want to copy static files into ansible node side
-     template:
-     src: mystaticfile.html
-     dest: /var/www/html/index.html
+    template:
+         src: mystaticfile.html
+         dest: /var/www/html/index.html
