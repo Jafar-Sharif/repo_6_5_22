@@ -8,3 +8,7 @@
 
 [myRedHatservers]
 172.31.18.215
+
+
+[myapplicationservers]
+172.31.19.115
